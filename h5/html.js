@@ -23,7 +23,7 @@ export default (script) =>
     }
     body,html {
       width: 100%;
-      height: 300px;
+      height: 100%;
     }
     * {
         box-sizing: border-box;
@@ -52,15 +52,15 @@ export default (script) =>
       font-size: 10px;
       width: 100%;
       height: 100%;
-      border: 1px solid #e8e8e8;
+      /*border: 1px solid #e8e8e8;*/
       background-color: #fff;
-      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.08) inset;
+      /*box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.08) inset;*/
     }
     
     .m-signature-pad--body {
       position: relative;
       height: 100%;
-      border: 1px solid #f4f4f4;
+      /*border: 1px solid #f4f4f4;*/
     }
     
     .m-signature-pad--body
@@ -71,47 +71,47 @@ export default (script) =>
         width: 100%;
         height: 100%;
         border-radius: 4px;
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.02) inset;
+        /*box-shadow: 0 0 5px rgba(0, 0, 0, 0.02) inset;*/
       }
     
-    .m-signature-pad--footer {
-      padding: 0px 20px;
-      margin-top: 10px;
-      position: relative;
-      height: 40px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
+    /*.m-signature-pad--footer {*/
+    /*  padding: 0px 20px;*/
+    /*  margin-top: 10px;*/
+    /*  position: relative;*/
+    /*  height: 40px;*/
+    /*  display: flex;*/
+    /*  align-items: center;*/
+    /*  justify-content: space-between;*/
+    /*}*/
     
-    .m-signature-pad--footer
-      .description {
-        color: #C3C3C3;
-        text-align: center;
-        font-size: 1.2em;
-      }
+    /*.m-signature-pad--footer*/
+    /*  .description {*/
+    /*    color: #C3C3C3;*/
+    /*    text-align: center;*/
+    /*    font-size: 1.2em;*/
+    /*  }*/
     
-    .m-signature-pad--footer
-      .button {
-        background-color: #3F99F7;
-        height: 32px;
-        padding: 0 20px;
-        line-height: 32px;
-        text-align: center;
-        color: #FFF;
-        border: 1px solid transparent;
-        border-radius: 4px;
-        outline: none;
-        box-shadow: none;
-      }
+    /*.m-signature-pad--footer*/
+    /*  .button {*/
+    /*    background-color: #3F99F7;*/
+    /*    height: 32px;*/
+    /*    padding: 0 20px;*/
+    /*    line-height: 32px;*/
+    /*    text-align: center;*/
+    /*    color: #FFF;*/
+    /*    border: 1px solid transparent;*/
+    /*    border-radius: 4px;*/
+    /*    outline: none;*/
+    /*    box-shadow: none;*/
+    /*  }*/
     
-    .m-signature-pad--footer
-      .button.clear {
-      }
+    /*.m-signature-pad--footer*/
+    /*  .button.clear {*/
+    /*  }*/
     
-    .m-signature-pad--footer
-      .button.save {
-      }
+    /*.m-signature-pad--footer*/
+    /*  .button.save {*/
+    /*  }*/
     
     @media screen and (max-width: 1024px) {
       .m-signature-pad {
@@ -136,16 +136,16 @@ export default (script) =>
         top: 0;
         bottom: 32px;
       }
-      .m-signature-pad--footer {
-        left: 20px;
-        right: 20px;
-        bottom: 4px;
-        height: 28px;
-      }
-      .m-signature-pad--footer
-        .description {
-          font-size: 1em;
-          margin-top: 1em;
+      /*.m-signature-pad--footer {*/
+      /*  left: 20px;*/
+      /*  right: 20px;*/
+      /*  bottom: 4px;*/
+      /*  height: 28px;*/
+      /*}*/
+      /*.m-signature-pad--footer*/
+      /*  .description {*/
+      /*    font-size: 1em;*/
+      /*    margin-top: 1em;*/
         }
     }
     <%style%>
@@ -159,11 +159,11 @@ export default (script) =>
         <canvas></canvas>
         <img style="position: absolute; top: 0; left: 0; pointer-events: none;" src=<%overlaySrc%> width=<%overlayWidth%> height=<%overlayHeight%> />
       </div>
-      <div class="m-signature-pad--footer">
-        <button type="button" class="button clear" data-action="clear"><%clear%></button>
-        <div class="description"><%description%></div>
-        <button type="button" class="button save" data-action="save"><%confirm%></button>
-      </div>
+<!--      <div class="m-signature-pad&#45;&#45;footer">-->
+<!--        <button type="button" class="button clear" data-action="clear"><%clear%></button>-->
+<!--        <div class="description"><%description%></div>-->
+<!--        <button type="button" class="button save" data-action="save"><%confirm%></button>-->
+<!--      </div>-->
     </div>
   </div>
 
